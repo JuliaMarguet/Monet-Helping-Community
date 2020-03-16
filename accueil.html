@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Ecrire un message</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/accueil.css') }}">
+    </head>
+    <body>
+
+        <h4 id="monet" align="center">MONET HELPING COMMUNITY</h4>
+
+        <div class="menu-pc">
+
+            <nav id="menu">
+                <label for="menu-mobile" class="menu-mobile">Archives</label>
+                <input type="checkbox" id="menu-mobile" role="button">
+                <ul>
+                    <li class="matieres">
+                        <a>Matières</a>
+                        <ul class="submenu">
+                            <li><a class="l">Francais</a></li>
+                            <li><a class="l">Philosophie</a></li>
+                            <li><a class="s">Mathématiques</a></li>
+                            <li><a class="s">Physique-Chimie</a></li>
+                            <li><a class="s">S.V.T.</a></li>
+                            <li><a class="la">Anglais</a></li>
+                            <li><a class="la">Espagnol</a></li>
+                            <li><a class="la">Allemand</a></li>
+                            <li><a class="la">Italien</a></li>
+                        </ul>
+                    </li>
+                    <li class="niveaux">
+                        <a>Niveaux</a>
+                        <ul class="submenu">
+                            <li><a>Terminale</a></li>
+                            <li><a>Première</a></li>
+                            <li><a>Seconde</a></li>
+                        </ul>
+                    </li>
+                    <li class="suivre">
+                        <a>?</a>
+                        <ul class="submenu">
+                            <li><a>à suivre</a></li>
+                            <li><a>à suivre</a></li>
+                            <li><a>à suivre</a></li>
+                        </ul>
+                    </li>
+                    <li class="suivre">
+                        <a>?</a>
+                        <ul class="submenu">
+                            <li><a>à suivre</a></li>
+                            <li><a>à suivre</a></li>
+                            <li><a>à suivre</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <div class="menu-tel">
+
+
+            <nav id="menu">
+                <label for="menu-mob1" class="menu-mob1">Matières</label>
+                <input type="checkbox" id="menu-mob1" role="button">
+                <ul>
+                    <li><a>Francais</a></li>
+                    <li><a>Philosophie</a></li>
+                    <li><a>Mathématiques</a></li>
+                    <li><a>Physique-Chimie</a></li>
+                    <li><a>S.V.T.</a></li>
+                    <li><a>Anglais</a></li>
+                    <li><a>Espagnol</a></li>
+                    <li><a>Allemand</a></li>
+                    <li><a>Italien</a></li>
+                </ul>
+            </nav>
+            <nav id="menu2">
+                <label for="menu-mob2" class="menu-mob2">Niveaux</label>
+                <input type="checkbox" id="menu-mob2" role="button">
+                <ul>
+                    <li><a>Terminale</a></li>
+                    <li><a>Première</a></li>
+                    <li><a>Seconde</a></li>
+                </ul>
+            </nav>
+
+
+        </div>
+
+
+        <div>
+            <form action="http://localhost:5000/resultat" method="post">
+                <label>Nom</label> : <input type="text" name="nom" />
+                <label>Prénom</label> : <input type="text" name="prenom" />
+                <label>Niveau</label> : <select name="niveau">
+                    <option>Seconde</option>
+                    <option>Première</option>
+                    <option>Terminale</option>
+
+                </select>
+                <label>Matiere</label> : <select name="matiere">
+                    <option>Philosophie</option>
+                    <option>Francais</option>
+                    <option>Mathématiques</option>
+                    <option>Physique-Chimie</option>
+                    <option>S.V.T.</option>
+                    <option>Anglais</option>
+                    <option>Espagnol</option>
+                    <option>Allemand</option>
+                    <option>Italien</option>
+                </select>
+            </form>
+        </div>
+        <div>
+            <form action="http://localhost:5000/resultat" method="post">
+                <label id="msg">Message:</label> : <textarea name="message" rows="5" cols="50"></textarea>
+                <input type="submit" value="Envoyer" />
+            </form>
+        </div>
+
+
+
+
+    </body>
+</html>
