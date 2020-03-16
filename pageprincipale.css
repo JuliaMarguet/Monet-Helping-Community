@@ -1,0 +1,58 @@
+#mone {
+    margin-top: 100px;
+}
+
+
+#b1 {
+    padding: 30px 80px;
+    color: #FFF;
+    background-color: #000000;
+    border: 0px;
+}
+
+#b1:hover {
+    background-color: #6E6E6E;
+}
+
+#b2:hover {
+    background-color: #6E6E6E;
+}
+
+
+#b2 {
+    padding: 30px 80px;
+    color: #FFF;
+    background-color: #000000;
+    border: 0px;
+}
+
+#b3 {
+    padding: 30px 80px;
+    color: #FFF;
+    background-color: #FFF;
+    border: 0px;
+}
+
+#m1 {
+    margin-top: 100px;
+}
+
+#m2 {
+    margin-top: 20px;
+}
+
+.ligne {
+    width: 100000px;
+    height: 1px;
+    background: #D3D3D3;
+    margin-left: 0px;
+}
+
+
+
+#bouton {
+    background-color: #000000;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
