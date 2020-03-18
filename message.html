@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html>
 <head>
@@ -12,6 +12,45 @@
     <h4 id="monet" align="center">MONET HELPING COMMUNITY</h4>
 
     <div class="center-div">
+        <form action="http://localhost:5000/resultat" method="post">
+            <div class="nom">
+                <label>Nom</label> : <input type="text" name="nom" />
+            </div>
+            <div class="prenom">
+                <label>Prénom</label> : <input type="text" name="prenom" />
+            </div>
+            <div class="niveau">
+                <label>Niveau</label> : <select name="niveau">
+                    <option>Seconde</option>
+                    <option>Première</option>
+                    <option>Terminale</option>
+                </select>
+            </div>
+            <div class="matiere">
+                <label>Matiere</label> : <select name="matiere">
+                    <option>Philosophie</option>
+                    <option>Francais</option>
+                    <option>Mathématiques</option>
+                    <option>Physique-Chimie</option>
+                    <option>S.V.T.</option>
+                    <option>Anglais</option>
+                    <option>Espagnol</option>
+                    <option>Allemand</option>
+                    <option>Italien</option>
+                </select>
+            </div>
+
+ 
+        <form action="http://localhost:5000/resultat" method="post">
+            <div class="centre">
+                <label></label><textarea id="msg" placeholder="Message" name="message" rows="20" cols="100"></textarea>
+            </div>
+            <div class="centre">
+                <input type="submit" value="Envoyer" />
+            </div>
+            
+        </form>
+    </div>
 
     </div>
 
@@ -37,5 +76,41 @@
         background-color: #FFFFFF;
         border-radius: 3px;
     }
+
+    .centre {
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #msg{
+        resize: none;
+    }
+
+
+    .nom {
+        margin-top: 25px;
+        margin-left: 20px;
+    }
+    
+    .prenom {
+        margin-top: 15px;
+        margin-left: 20px;
+    }
+
+    .niveau {
+        position: absolute;
+        left: 1000px;
+        top: 166px;
+    }
+
+    .matiere {
+        position: absolute;
+        left: 1000px;
+        top: 200px;
+    }
+
+    
+    
 
 </style>
