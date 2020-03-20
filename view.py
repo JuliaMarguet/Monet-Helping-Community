@@ -12,6 +12,21 @@ def principale():
 def message():
     return render_template('message.html')
 
+@app.route('/voir',methods = ['GET', 'POST'])
+def voir():
+    v={}
+    if request.method == 'GET':
+        return render_template('voir.html')
+    else:
+        result = request.form
+        v["n"]=result['nom']
+        v["p"]=result['prenom']
+        v["c"]=result['niveau']
+        v["m"]=result['matiere']
+        v["t"]=result['message']
+        return render_template("voir.html", nom=v.get("n"), prenom=v.get("p"), niveau=v.get("c"), matiere=v.get("m"), message=v.get("t"))
+
+
 @app.route('/accueil')
 def home():
     return render_template('accueil.html')
@@ -29,3 +44,4 @@ def resultat():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
