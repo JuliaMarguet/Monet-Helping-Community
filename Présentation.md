@@ -1,0 +1,12 @@
+# Monet-Helping-Community
+
+Afin que le programme marche, il faut organiser les fichiers comme cela:
+
+-> 'static' :
+            -> 'css' (ce dossier comprendra toutes les feuilles css)
+            -> 'img' (ce dossier comprendra toutes les images)
+            
+-> 'templates' (ce dossier comprendra toutes les pages HTML)
+
+-> et le fichier Python
+            
