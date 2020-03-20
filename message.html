@@ -9,53 +9,69 @@
 </head>
 <body>
 
+    <p id="logo">
+        <img src="static/img/mhc.png" width="170px" height="100px">
+    </p>
+
     <h4 id="monet" align="center">MONET HELPING COMMUNITY</h4>
 
     <div class="center-div">
-        <form action="http://localhost:5000/resultat" method="post">
-            <div class="nom">
-                <label>Nom</label> : <input type="text" name="nom" />
-            </div>
-            <div class="prenom">
-                <label>Prénom</label> : <input type="text" name="prenom" />
-            </div>
-            <div class="niveau">
-                <label>Niveau</label> : <select name="niveau">
-                    <option>Seconde</option>
-                    <option>Première</option>
-                    <option>Terminale</option>
-                </select>
-            </div>
-            <div class="matiere">
-                <label>Matiere</label> : <select name="matiere">
-                    <option>Philosophie</option>
-                    <option>Francais</option>
-                    <option>Mathématiques</option>
-                    <option>Physique-Chimie</option>
-                    <option>S.V.T.</option>
-                    <option>Anglais</option>
-                    <option>Espagnol</option>
-                    <option>Allemand</option>
-                    <option>Italien</option>
-                </select>
-            </div>
-
- 
-        <form action="http://localhost:5000/resultat" method="post">
-            <div class="centre">
-                <label></label><textarea id="msg" placeholder="Message" name="message" rows="20" cols="100"></textarea>
-            </div>
-            <div class="centre">
-                <input type="submit" value="Envoyer" />
-            </div>
+        <form action="http://localhost:5000/voir" method="post">
             
-        </form>
+            <div id="ligne1">
+                
+                <div class="nom">
+                    <label>Nom</label> : <input id="espace" type="text" name="nom" />
+                </div>
+
+                <div class="niveau">
+                    <label>Niveau</label> : <select name="niveau">
+                        <option>Seconde</option>
+                        <option>Première</option>
+                        <option>Terminale</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div id="ligne2">
+
+                <div class="prenom">
+                    <label>Prénom</label> : <input type="text" name="prenom" />
+                </div>
+
+                <div class="matiere">
+                    <label>Matiere</label> : <select name="matiere">
+                        <option>Philosophie</option>
+                        <option>Francais</option>
+                        <option>Mathématiques</option>
+                        <option>Physique-Chimie</option>
+                        <option>S.V.T.</option>
+                        <option>Anglais</option>
+                        <option>Espagnol</option>
+                        <option>Allemand</option>
+                        <option>Italien</option>
+                    </select>
+                </div>
+
+            </div>
+
+
+            <form action="http://localhost:5000/voir" method="post">
+                <div class="centre">
+                    <label></label><textarea id="msg" placeholder="Message" name="message" rows="20" cols="100"></textarea>
+                </div>
+                <div class="centre">
+                    <input type="submit" value="Envoyer" />
+                </div>
+
+            </form>
     </div>
 
-    </div>
+    
 
 
-    </div>
+    
 
 
 </body>
@@ -63,9 +79,12 @@
 
 <style>
     #monet {
-        margin-top: 100px;
+        margin-top: 10px;
     }
 
+    #espace{
+        padding-right; 200px;
+    }
 
     .center-div {
         margin: 0 auto;
@@ -75,6 +94,17 @@
         height: 500px;
         background-color: #FFFFFF;
         border-radius: 3px;
+    }
+
+    #ligne1{
+        width: 1000px;
+        height: 30px;
+    }
+
+    #ligne2 {
+        margin-top: 30px;
+        width: 1000px;
+        height: 30px;
     }
 
     .centre {
@@ -89,28 +119,34 @@
 
 
     .nom {
+        float:left;
         margin-top: 25px;
-        margin-left: 20px;
-    }
-    
-    .prenom {
-        margin-top: 15px;
-        margin-left: 20px;
+        margin-left: 27px;
     }
 
     .niveau {
-        position: absolute;
-        left: 1000px;
-        top: 166px;
+        float: right;
+        margin-top: 25px;
+        margin-right: 30px;
     }
+
+
+    .prenom {
+        margin-left: 10px;
+        float: left;
+    }
+
+
 
     .matiere {
-        position: absolute;
-        left: 1000px;
-        top: 200px;
+        float: right;
+        margin-right: 30px;
+    }
+
+    #logo {
+        text-align: center;
     }
 
     
     
 
-</style>
