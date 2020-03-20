@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Ecrire un message</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/message.css') }}" ">
+    <link rel="icon" href="static/img/mhc.ico" />
+</head>
+<body>
+
+    <p id="logo">
+        <img src="static/img/mhc.png" width="170px" height="100px">
+    </p>
+
+    <h4 id="monet" align="center">MONET HELPING COMMUNITY</h4>
+
+    <div class="post">
+        <p class="info">{{prenom}} {{nom}} - {{niveau}} - {{matiere}}</p>
+        <p>Message: {{message}}</p>
+    </div>
+
+
+
+
+
+
+
+</body>
+</html>
+
+<style>
+    #monet {
+        margin-top: 10px;
+    }
+
+    #logo {
+        text-align: center;
+    }
+</style>
