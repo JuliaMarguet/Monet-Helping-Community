@@ -1,0 +1,58 @@
+body 
+{
+	margin: 0px;
+	height: 100%;
+}
+
+.monetHeader {
+    /* background-image: url(Logo MHC.png);
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat; */
+	
+	border-bottom: #D3D3D3 1px dashed;
+}
+
+#monet {
+	margin-top: 1em;
+}
+
+#btnEcrire, 
+#btnRepondre,
+#b3 {
+	padding: 30px 80px;
+	color: #FFF;
+	background-color: #424356;
+    border: 0px;
+	font-size: 0.9em;
+}
+
+#b3 {
+	background: #FFF;
+}
+
+#btnEcrire:hover,
+#btnRepondre:hover {
+    background-color: #7F8091;
+	cursor: pointer;
+}
+
+#monetContentPage {
+    padding-top: 8em;
+	height: 100%
+}
+
+#m2 {
+    margin-top: 20px;
+}
+
+#bouton {
+    background-color: #000000;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+#logo{
+	text-align: center;
+}
+

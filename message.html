@@ -1,154 +1,77 @@
 <!DOCTYPE html>
 
 <html>
-<head>
-    <title>Ecrire un message</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/message.css') }}" ">
-    <link rel="icon" href="static/img/mhc.ico" />
-</head>
-<body>
+	<head>
+		<title>Ecrire un message</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/general.css"/>
+		<link rel="stylesheet" type="text/css" href="css/message.css"/>
+		<link rel="shortcut icon" href="img/Logo MHC.png" />
+	</head>
+	<body>
+		<div class="monetHeader">
+			<div id="logo">
+				<img src="img/Logo MHC.png" width="200px"/>
+			</div>
 
-    <p id="logo">
-        <img src="static/img/mhc.png" width="170px" height="100px">
-    </p>
+			<h4 id="monet" align="center">MONET HELPING COMMUNITY</h4>
+		</div>
 
-    <h4 id="monet" align="center">MONET HELPING COMMUNITY</h4>
+		<div class="center-div">
+			<form action="http://localhost:5000/voir" method="post">
+				
+				<div id="ligne1">
+					
+					<div class="nom">
+						<label>Nom</label> : <input id="espace" type="text" name="nom" />
+					</div>
 
-    <div class="center-div">
-        <form action="http://localhost:5000/voir" method="post">
-            
-            <div id="ligne1">
-                
-                <div class="nom">
-                    <label>Nom</label> : <input id="espace" type="text" name="nom" />
-                </div>
+					<div class="niveau">
+						<label>Niveau</label> : <select name="niveau">
+							<option>Seconde</option>
+							<option>Première</option>
+							<option>Terminale</option>
+						</select>
+					</div>
 
-                <div class="niveau">
-                    <label>Niveau</label> : <select name="niveau">
-                        <option>Seconde</option>
-                        <option>Première</option>
-                        <option>Terminale</option>
-                    </select>
-                </div>
+				</div>
 
-            </div>
+				<div id="ligne2">
 
-            <div id="ligne2">
+					<div class="prenom">
+						<label>Prénom</label> : <input type="text" name="prenom" />
+					</div>
 
-                <div class="prenom">
-                    <label>Prénom</label> : <input type="text" name="prenom" />
-                </div>
+					<div class="matiere">
+						<label>Matiere</label> : <select name="matiere">							
+							<option>Francais</option>
+							<option>Histoire-Géo</option>
+							<option>Langues-Anglais</option>
+							<option>Langues-Autres</option>
+							<option>Maths</option>
+							<option>Philo</option>
+							<option>Physique-Chimie</option>
+							<option>S.E.S.</option>
+							<option>S.V.T.</option>
+							<option>Autres</option>
+						</select>
+					</div>
 
-                <div class="matiere">
-                    <label>Matiere</label> : <select name="matiere">
-                        <option>Philosophie</option>
-                        <option>Francais</option>
-                        <option>Mathématiques</option>
-                        <option>Physique-Chimie</option>
-                        <option>S.V.T.</option>
-                        <option>Anglais</option>
-                        <option>Espagnol</option>
-                        <option>Allemand</option>
-                        <option>Italien</option>
-                    </select>
-                </div>
-
-            </div>
-
-
-            <form action="http://localhost:5000/voir" method="post">
-                <div class="centre">
-                    <label></label><textarea id="msg" placeholder="Message" name="message" rows="20" cols="100"></textarea>
-                </div>
-                <div class="centre">
-                    <input type="submit" value="Envoyer" />
-                </div>
-
-            </form>
-    </div>
-
-    
+				</div>
 
 
-    
+				<form action="http://localhost:5000/voir" method="post">
+					<div class="centre">
+						<label></label><textarea id="msg" placeholder="Message" name="message" rows="20" cols="100"></textarea>
+					</div>
+					<div class="centre">
+						<input type="submit" value="Envoyer" />
+					</div>
 
+				</form>
+		</div>
 
-</body>
+	</body>
 </html>
 
-<style>
-    #monet {
-        margin-top: 10px;
-    }
-
-    #espace{
-        padding-right; 200px;
-    }
-
-    .center-div {
-        margin: 0 auto;
-        border: solid 2px;
-        border-color: #000000;
-        width: 1000px;
-        height: 500px;
-        background-color: #FFFFFF;
-        border-radius: 3px;
-    }
-
-    #ligne1{
-        width: 1000px;
-        height: 30px;
-    }
-
-    #ligne2 {
-        margin-top: 30px;
-        width: 1000px;
-        height: 30px;
-    }
-
-    .centre {
-        margin-top: 25px;
-        display: flex;
-        justify-content: center;
-    }
-    
-    #msg{
-        resize: none;
-    }
-
-
-    .nom {
-        float:left;
-        margin-top: 25px;
-        margin-left: 27px;
-    }
-
-    .niveau {
-        float: right;
-        margin-top: 25px;
-        margin-right: 30px;
-    }
-
-
-    .prenom {
-        margin-left: 10px;
-        float: left;
-    }
-
-
-
-    .matiere {
-        float: right;
-        margin-right: 30px;
-    }
-
-    #logo {
-        text-align: center;
-    }
-
-    
-    
-
-</style>

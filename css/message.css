@@ -1,0 +1,62 @@
+
+#espace{
+	padding-right; 200px;
+}
+
+.center-div {
+	margin: 0 auto;
+	border: solid 2px;
+	border-color: #000000;
+	width: 1000px;
+	height: 500px;
+	background-color: #FFFFFF;
+	border-radius: 3px;
+}
+
+#ligne1{
+	width: 1000px;
+	height: 30px;
+}
+
+#ligne2 {
+	margin-top: 30px;
+	width: 1000px;
+	height: 30px;
+}
+
+.centre {
+	margin-top: 25px;
+	display: flex;
+	justify-content: center;
+}
+
+#msg{
+	resize: none;
+}
+
+
+.nom {
+	float:left;
+	margin-top: 25px;
+	margin-left: 27px;
+}
+
+.niveau {
+	float: right;
+	margin-top: 25px;
+	margin-right: 30px;
+}
+
+
+.prenom {
+	margin-left: 10px;
+	float: left;
+}
+
+
+
+.matiere {
+	float: right;
+	margin-right: 30px;
+}
+

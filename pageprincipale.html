@@ -1,99 +1,29 @@
 <!DOCTYPE html>
 
 <html>
-<head>
-    <title>Accueil</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/pageprincipale.css') }}">
-    <link rel="icon" href="static/img/mhc.ico" />
-</head>
+	<head>
+		<title>Accueil - Monet Helping Community</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" type="text/css" href="css/general.css"/>
+		<link rel="stylesheet" type="text/css" href="css/pageprincipale.css"/>
+		<link rel="shortcut icon" href="img/Logo MHC.png" />
+	</head>
     <body>
-        <p id="logo" >
-            <img src="static/img/mhc.png" width="170px" height="100px">
-        </p>
+		<div class="monetHeader">
+			<div id="logo">
+				<img src="img/Logo MHC.png" width="200px"/>
+			</div>
 
-        <h4 id="monet" align="center">MONET HELPING COMMUNITY</h4>
+			<h4 id="monet" align="center">MONET HELPING COMMUNITY</h4>
+		</div>
 
-
-        <div class="ligne"></div>
-
-
-
-        <div id="m1" align="center">
-            <button id="b1" type="button" onclick="window.location.href='http://localhost:5000/message';">Ecrire un message</button>
+        <div id="monetContentPage" align="center">
+            <button id="btnEcrire" type="button" onclick="window.location.href='message.html';" title="Cliquez ici pour écrire un message">Ecrire un message</button>
             <button id="b3"></button>
-            <button id="b2" type="button" onclick="window.location.href='http://localhost:5000/voir';">Voir les messages</button>
+            <button id="btnRepondre" type="button" onclick="window.location.href='resultat.html';" title="Cliquez ici pour voir la réponse à vos messages">Voir les messages</button>
         </div>
-
-        
-
-
     </body>
 </html>
 
-<style>
-    #monet {
-    margin-top: 10px;
-    }
-
-
-    #b1 {
-    padding: 30px 80px;
-    color: #FFF;
-    background-color: #000000;
-    border: 0px;
-    }
-
-    #b1:hover {
-    background-color: #6E6E6E;
-    }
-
-    #b2:hover {
-    background-color: #6E6E6E;
-    }
-
-
-    #b2 {
-    padding: 30px 80px;
-    color: #FFF;
-    background-color: #000000;
-    border: 0px;
-    }
-
-    #b3 {
-    padding: 30px 80px;
-    color: #FFF;
-    background-color: #FFF;
-    border: 0px;
-    }
-
-    #m1 {
-    margin-top: 100px;
-    }
-
-    #m2 {
-    margin-top: 20px;
-    }
-
-    .ligne {
-    width: 100000px;
-    height: 1px;
-    background: #D3D3D3;
-    margin-left: 0px;
-    }
-
-
-
-    #bouton {
-    background-color: #000000;
-    text-decoration: none;
-    padding: 10px 20px;
-    }
-
-
-    #logo{
-    text-align: center;
-    }
-
-</style>        
+       

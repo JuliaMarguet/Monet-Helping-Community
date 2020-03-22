@@ -1,0 +1,28 @@
+body 
+{
+	margin: 0px;
+	height: 100%;
+}
+
+.monetHeader {
+    /* background-image: url(Logo MHC.png);
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat; */
+	
+	border-bottom: #D3D3D3 1px dashed;
+}
+
+#monet {
+	margin-top: 1em;
+}
+
+#monetContentPage {
+    padding-top: 8em;
+	height: 100%
+}
+
+#logo{
+	text-align: center;
+}
+

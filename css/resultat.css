@@ -1,0 +1,197 @@
+
+/*-----Menu PC-----*/
+
+.menu-tel{
+	display: none;
+}
+
+#monet{
+	margin-top: 100px;
+}
+
+#menu{
+	margin-top: 5px;
+}
+
+
+nav > ul{
+	margin: 0px;
+	padding: 0px;
+}
+
+nav li{
+	list-style-type: none;
+}
+
+nav> ul > li{
+	float: left;
+	position: relative;
+}
+
+.submenu{
+	display: none;
+}
+
+nav input[type=checkbox]{
+	display: none;
+}
+
+nav label{
+	display: none;
+}
+
+
+nav{
+	width: 100%;
+	background-color: #ffffff;
+}
+
+
+nav > ul::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+nav a{
+	display: inline-block;
+	text-decoration: none;
+}
+
+nav > ul > li >a{
+	padding: 20px 30px;
+	color: #000000;
+}
+
+nav li:hover .submenu{
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	padding: 0px;
+	z-index: 100000;
+}
+
+.submenu li{
+	border-bottom: 1px solid #CCC;
+}
+
+.submenu li a{
+	padding: 15px 30px;
+	font-size: 13px;
+	color: #000000;
+	width: 170px;
+}
+
+.matieres:hover{
+	border-bottom: 10px solid #000000;
+	background-color: #ffffff;
+}
+
+.niveaux:hover{
+	border-bottom: 10px solid #000000;
+	background-color: #ffffff;
+}
+
+.suivre:hover{
+	border-bottom: 10px solid #000000;
+	background-color: #ffffff;
+}
+
+
+.matieres .submenu .l{
+	background-color:#9fcc87 
+}
+
+.matieres .submenu .s{
+	background-color:#61a4d4 
+}
+
+.matieres .submenu .la{
+	background-color:#d6c076 
+}
+
+
+.niveaux .submenu{
+	background-color:#ffffff 
+}
+
+.suivre .submenu{
+	background-color:#ffffff 
+}
+
+
+.submenu li:hover a{
+	color: #000000;
+	font-weight: bold;
+}
+
+
+nav input[type=checkbox]:checked ~ ul{
+	display: block;
+}
+
+.post{
+	width: 400px;
+	background-color: #ffffff;
+	border: 2px dotted;
+	margin-top: 20px;
+	margin-left: 10px;
+	border-radius: 10px;
+}
+
+.info{
+	text-decoration : underline;
+}
+
+
+
+
+/*----- Menu Mobile -----*/
+
+
+@media screen and (max-width: 780px){
+
+	.menu-pc{
+		display: none;
+	}
+
+	.menu-tel{
+		display: block;
+	}
+
+
+	.menu-tel .menu-mob1{
+		display: block;
+		color: #FFF;
+		background-color: #000000;
+		text-align: center;
+		padding: 12px 0px;
+	}
+
+	.menu-tel .menu-mob2{
+		display: block;
+		color: #FFF;
+		background-color: #000000;
+		text-align: center;
+		padding: 12px 0px;
+	}
+
+	nav ul{
+		display: none;
+	}
+	nav ul li, nav ul li a{
+		width: 100%;
+		text-align: center;
+	}
+	nav ul li a, nav ul li:hover a{
+		padding: 10px 0px;
+	}
+	nav li:hover .submenu{
+		display: block;
+		position: static;
+	}
+
+
+}
+
